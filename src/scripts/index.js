@@ -1,4 +1,4 @@
-// alert("Seja bem-vindo ao site da EcoNutri!");
+alert("Seja bem-vindo ao site da EcoNutri!");
 
 // SLIDE -----------------------------------------------------
 
