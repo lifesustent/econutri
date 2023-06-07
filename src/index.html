@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoNutri</title>
+  <link rel="stylesheet" href="./assets/css/keyframes.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800&display=swap" />
+  <script src="https://kit.fontawesome.com/1e9ea76602.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/img/logo.svg" alt="Econutri" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#sustainability">Sobre</a></li>
+          <li><a href="#goals">Objetivos</a></li>
+          <li><a href="#benefits">Benefícios</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        
+        <a href="./login.html" class="button">Login</a>
+
+        <ul>
+          <li><a href="javascript:void(0)" onclick="toggleDarkMode();">Dark <span class="fa-solid fa-toggle-on"></span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Reduza o desperdício de alimentos e promova uma alimentação consciente.</h1>
+        <p>A solução inovadora que combina educação, tecnologia e sustentabilidade para resolver o problema global do
+          desperdício de alimentos.</p>
+        <a href="#" class="button">Solicitar demonstração <span class="fa-solid fa-arrow-right"></span></a>
+      </div>
+
+      <div class="hero-image">
+        <img src="./assets/img/hero-software.svg" alt="Uma solução de software sustentável" />
+      </div>
+    </section>
+  </div>
+
+  <section class="tech">
+    <div class="image">
+      <img id="slide" src="" alt="">
+      <div class="fog"></div>
+    </div>
+    <div class="container">
+      <h1>Seja Você um Agente de Mudança</h1>
+      <p>O Econutri impacta um público diversificado, englobando desde indivíduos preocupados com sustentabilidade,
+        famílias em busca de práticas alimentares mais conscientes até organizações que buscam promover a redução do
+        desperdício de alimentos em suas operações. Todos podem se beneficiar e se tornar agentes de mudança com o
+        Econutri.</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <section id="sustainability" class="sustainability">
+      <h1>A Tecnologia a Favor da Sustentabilidade</h1>
+      <img src="./assets/img/section-3.svg" alt="A Tecnologia a Favor da Sustentabilidade">
+      <p>O Econutri utiliza tecnologias avançadas, como Inteligência Artificial (IA), para personalizar as informações e
+        orientações com base nos hábitos de consumo de cada usuário. Isso permite uma experiência única, adaptada às
+        necessidades individuais, e torna a redução do desperdício de alimentos mais fácil e eficaz.</p>
+    </section>
+
+    <section id="goals" class="goals">
+      <div class="content">
+        <h1>Alcance Seus Objetivos Sustentáveis</h1>
+        <p>Você poderá alcançar diversos objetivos, como reduzir o desperdício de alimentos em sua rotina diária, adotar
+          práticas alimentares mais conscientes, aproveitar melhor os alimentos e contribuir para a preservação do meio
+          ambiente. O Econutri o guiará em cada etapa do caminho.</p>
+      </div>
+      <img src="./assets/img/section-4.svg" alt="Alcance Seus Objetivos Sustentáveis">
+    </section>
+
+    <section id="benefits" class="benefits">
+      <img src="./assets/img/section-5.svg" alt="Benefícios para Você e para o Planeta">
+      <div class="content">
+        <h1>Benefícios para Você e para o Planeta</h1>
+        <p>Você poderá desfrutar de uma série de benefícios, como economizar dinheiro, reduzir o impacto ambiental,
+          promover a segurança alimentar, descobrir novas receitas e práticas culinárias, além de contribuir para a
+          equidade na distribuição de alimentos. Sua participação fará a diferença.</p>
+      </div>
+    </section>
+
+    <section id="solution" class="solution">
+      <h1>Uma Solução Prática e Integrada</h1>
+      <p>O Econutri se integra facilmente à sua rotina diária, fornecendo informações, dicas e recursos práticos para
+        ajudá-lo a reduzir o desperdício de alimentos. Com lembretes personalizados, orientações de armazenamento,
+        receitas de aproveitamento de sobras e conexões com organizações de caridade, você terá tudo o que precisa para
+        fazer a diferença no seu dia a dia.</p>
+      <img src="./assets/img/section-6.svg" alt="Uma Solução Prática e Integrada">
+    </section>
+  </div>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <h3>Não perca mais tempo!</h3>
+        <p>Entre em contato e saiba mais sobre o projeto.</p>
+      </div>
+
+      <form class="contact-form" autocomplete="off" action="./index.html#contact" onsubmit="return validateForm()">
+        <input type="text" id="name" name="name" placeholder="Nome" />
+        <input type="text" id="phone" name="phone" placeholder="Telefone" />
+        <input type="email" id="email" name="email" placeholder="E-mail" />
+        <textarea id="message" name="message" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar mensagem <span class="fa-solid fa-arrow-right"></span></button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="./assets/img/logo-inverse.svg" alt="Econutri" />
+
+        <p>Todos os direitos reservados.</p>
+      </a>
+      <p id="datetime"></p>
+      <p>Feito com &lt;3 na Fiap</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/general.js"></script>
+  <script src="./scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoNutri - Login</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="./assets/css/login.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/img/logo.svg" alt="EcoNutri" />
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html#sustainability">Sobre</a></li>
+          <li><a href="./index.html#goals">Objetivos</a></li>
+          <li><a href="./index.html#benefits">Benefícios</a></li>
+          <li><a href="./index.html#contact">Contato</a></li>
+        </ul>
+
+        <a href="./login.html" class="button">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="head-card">
+    <form class="card" onsubmit="return validateLogin()">
+      <div class="card-title">
+        <h2>Insira as informaçoes abaixo</h2>
+      </div>
+
+      <div class="card-informattions">
+        <div class="card-informattions-item">
+          <label for="login">Nome usuário</label>
+          <input type="text" id="login" autocomplete="off" placeholder="Digite seu usuário">
+        </div>
+
+        <div class="card-informattions-item">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" autocomplete="off" placeholder="Digite sua senha">
+        </div>
+      </div>
+
+      <button type="submit" id="button">Verificar</button>
+    </form>
+    
+    <p id="datetime"></p>
+  </div>
+
+  <footer>
+    <div class="container">
+      <a href="./index.html" class="logo">
+        <img src="./assets/img/logo-inverse.svg" alt="Econutri" />
+
+        <p>Todos os direitos reservados.</p>
+      </a>
+      <p id="datetime"></p>
+      <p>Feito com &lt;3 na Fiap</p>
+    </div>
+  </footer>
+
+  <script src="./scripts/general.js"></script>
+  <script src="./scripts/login.js"></script>
+</body>
+
+</html>
